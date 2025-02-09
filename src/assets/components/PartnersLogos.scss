@@ -1,0 +1,13 @@
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 73px;
+  padding: 20px;
+  background-color: #ffff;
+}
+
+.partner-logo {
+  height: 134px;
+  object-fit: contain;
+}

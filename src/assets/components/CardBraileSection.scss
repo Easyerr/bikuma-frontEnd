@@ -1,0 +1,43 @@
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.card-braile {
+  width: 230px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 32px;
+  padding: 48px 24px;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  }
+  &__icon {
+    height: auto;
+  }
+}
+.card-braile__title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.special-title {
+  font-size: 21px; /* Cambiar el tamaño de fuente solo para el título específico */
+}
+
+.card-braile__description {
+  font-size: 18px;
+}

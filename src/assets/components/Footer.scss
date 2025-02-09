@@ -1,0 +1,303 @@
+.footer {
+  background-color: #005eb8;
+  padding: 70px 140px 30px 140px;
+  color: white;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__left {
+    width: 30%;
+  }
+  &__left {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__logo {
+    max-width: 75%;
+  }
+
+  &__contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 193px;
+    height: 54px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #d50032;
+    color: white;
+    border-radius: 33px;
+    border: none;
+    white-space: nowrap;
+  }
+  &__aenor-iqnet {
+    padding-top: 40px;
+    width: 85%;
+  }
+
+  &__center {
+    width: 30%;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__nav a {
+    height: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__nav a {
+    text-decoration: none;
+    color: white;
+    margin: 22px;
+    transition: color 0.3s;
+  }
+
+  &__nav a:hover {
+    color: #004c94;
+  }
+
+  &__right {
+    background-color: #0056a8;
+    padding: 20px;
+    border-radius: 32px;
+    width: 35%;
+    height: 80%;
+  }
+  &__right h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28.51px;
+    margin-bottom: 0px;
+  }
+  &__right p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__form-name,
+  &__form-email {
+    width: 90%;
+    height: 37px;
+    padding: 8px 8px 8px 24px;
+    margin-bottom: 10px;
+    border-radius: 32px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #003e94;
+      font-size: 18px;
+    }
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  &__form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  &__subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    padding: 16px 24px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #004c94;
+    color: white;
+    border-radius: 33px;
+    border: none;
+    white-space: nowrap;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    //border-top: 1px solid #ddd;
+  }
+
+  &__legal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    opacity: 40%;
+    font-size: 18px;
+  }
+  &__legal a {
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 18px;
+  }
+
+  &__legal a:hover {
+    color: #004c94;
+  }
+
+  &__social a {
+    margin-right: 10px;
+  }
+
+  &__social img {
+    margin-left: 23px;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    transition: transform 0.3s;
+  }
+
+  &__social img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.footer {
+  @media (max-width: 1200px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__left,
+    &__center,
+    &__right {
+      width: 90%;
+      text-align: center;
+    }
+
+    &__nav {
+      flex-direction: row;
+      justify-content: center;
+      a {
+        margin: 10px;
+      }
+    }
+
+    &__right {
+      height: auto;
+      &__subscribe-button {
+        margin: 20px auto;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      &__legal {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        a {
+          margin: 5px 0;
+          margin-left: 0;
+        }
+      }
+      &__social {
+        justify-content: center;
+        a {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 90%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__logo {
+      max-width: 100%;
+    }
+
+    &__contact-button {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    &__aenor-iqnet {
+      width: 85%;
+    }
+
+    &__right {
+      width: 90%;
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      &__form-name,
+      &__form-email {
+        font-size: 16px;
+      }
+      &__subscribe-button {
+        font-size: 16px;
+      }
+    }
+
+    &__legal {
+      font-size: 16px;
+      flex-direction: column;
+      a {
+        font-size: 16px;
+      }
+    }
+
+    &__social {
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 10px 10px;
+      }
+    }
+  }
+}

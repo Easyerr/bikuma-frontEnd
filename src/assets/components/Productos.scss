@@ -1,0 +1,48 @@
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 270px;
+  height: auto;
+  text-align: center;
+}
+.productos-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.productos-section__title {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.producto__icon {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 32px;
+  margin-bottom: 20px;
+}
+.producto__icon:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.producto__title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0px;
+  color: #333;
+}

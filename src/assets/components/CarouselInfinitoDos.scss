@@ -1,0 +1,51 @@
+.carousel {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  &__track {
+    display: flex;
+    gap: 20px;
+    will-change: transform;
+  }
+}
+
+.card {
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.5s, opacity 0.5s;
+  position: relative;
+
+  &__content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: 12px;
+    margin: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.carousel-location {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #005eb8;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding: 3px;
+}
+
+.carousel-location img {
+  margin-right: 8px;
+}

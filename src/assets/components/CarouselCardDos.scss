@@ -1,0 +1,50 @@
+.carousel-containerDos {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  background-color: #f8f9fa;
+}
+.carousel-containerDos h1 {
+  margin-bottom: 30px; /* Espacio entre el título y el carrusel */
+  text-align: center;
+  font-size: 44px; /* Ajusta el tamaño del título */
+  font-weight: bold;
+}
+
+.swiper {
+  width: 90%;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-cardDos {
+  position: relative;
+  width: 333px;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f8f9fa;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin: 0 20px;
+  transform-origin: center; /* Asegura que crezca desde el centro */
+}
+
+.carousel-cardDos:hover {
+  width: 450px; /* Aumentamos el ancho en hover */
+  height: 495px;
+  z-index: 10;
+  transform: translate(-10px);
+}
